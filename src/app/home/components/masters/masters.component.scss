@@ -1,1 +1,14 @@
 @import "../../../../scss/home/component-wrapper";
+
+.masters-inner {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.masters{
+    display: flex;
+    flex-wrap: wrap;
+}
+.master-card{
+    padding-right: 75px;
+}

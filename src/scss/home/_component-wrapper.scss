@@ -4,7 +4,7 @@
   align-items: center;
 }
 
-.base-max-width-wrapper{
+.base-max-width-wrapper {
   padding: 0px 15px;
   max-width: 1460px;
   width: 100%;
@@ -13,5 +13,7 @@
 .base-inner-content-wrapper {
   padding: 0px 15px;
   border-radius: 30px;
+  -webkit-box-shadow: 30px 30px 103px -5px rgba(166, 166, 166, 0.26);
+  -moz-box-shadow: 30px 30px 103px -5px rgba(166, 166, 166, 0.26);
+  box-shadow: 30px 30px 103px -5px rgba(166, 166, 166, 0.26);
 }
-

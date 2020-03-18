@@ -4,23 +4,33 @@
   background-color: #fff;
   color: #000;
 }
+
 .base-inner-content-wrapper {
   background-color: #fff;
   color: #000;
+  margin: 545px 0px 0px;
+  box-shadow: none;
 }
+
+.sessions-inner {
+  max-width: 1380px;
+  margin: 0 auto;
+  padding: 0px 0px 110px;
+}
+
 .sessions-list {
   padding-top: 127px;
 }
 
-.session-header-wrapper{
+.session-header-wrapper {
   border-left: 3px solid;
   padding-left: 13px;
 }
 
-.session-info-wrapper{
+.session-info-wrapper {
   margin-left: 1px;
   border-left: 1px solid;
-  border-color: #E8E8E8;
+  border-color: #e8e8e8;
   padding-left: 13px;
 }
 
@@ -48,8 +58,8 @@
       padding-right: 4px;
     }
   }
-  &:before{
-    content:'';
+  &:before {
+    content: "";
     padding-left: 5px;
     border-left: 3px solid;
   }
@@ -59,6 +69,10 @@
   padding: 48px 28px 72px;
   display: flex;
   text-align: start;
+
+  &:last-child {
+    padding: 48px 28px 0px;
+  }
 
   .authors {
     flex: 1;
