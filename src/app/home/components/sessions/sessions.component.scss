@@ -1,10 +1,76 @@
 @import "../../../../scss/home/component-wrapper";
 
 .base-content-wrapper {
-    background-color: #fff;
-    color: #000;
+  background-color: #fff;
+  color: #000;
+}
+.base-inner-content-wrapper {
+  background-color: #fff;
+  color: #000;
+}
+.sessions-list {
+  padding-top: 127px;
+}
+
+.session-header-wrapper{
+  border-left: 3px solid;
+  padding-left: 13px;
+}
+
+.session-info-wrapper{
+  margin-left: 1px;
+  border-left: 1px solid;
+  border-color: #E8E8E8;
+  padding-left: 13px;
+}
+
+.session-header {
+  border-radius: 12px;
+  padding: 0px 28px;
+  background-color: #f8f8f8;
+  height: 53px;
+
+  display: flex;
+  text-align: start;
+  justify-content: center;
+  align-items: center;
+
+  .item {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    &.name {
+      font-weight: bold;
+    }
+    img {
+      width: 23px;
+      height: 23px;
+      padding-right: 4px;
+    }
   }
-  .base-inner-content-wrapper {
-    background-color: #fff;
-    color: #000;
+  &:before{
+    content:'';
+    padding-left: 5px;
+    border-left: 3px solid;
   }
+}
+
+.session-info {
+  padding: 48px 28px 72px;
+  display: flex;
+  text-align: start;
+
+  .authors {
+    flex: 1;
+    display: flex;
+    .avatar {
+      padding-right: 25px;
+      &:last-child {
+        padding-right: 0px;
+      }
+    }
+  }
+  .description {
+    flex: 3;
+  }
+}

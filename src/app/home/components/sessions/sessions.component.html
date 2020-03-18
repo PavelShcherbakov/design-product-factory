@@ -3,8 +3,43 @@
         <div class="base-inner-content-wrapper">
             <div class="sessions-inner">
                 <app-text-header [text]="'Sessions'" [backgroundText]="'Sessions'"></app-text-header>
+                <div class="sessions-list">
+                    <div class="session" *ngFor="let item of sessions">
+
+                        <div class="session-header-wrapper">
+                            <div class="session-header">
+                                <div class="item name">
+                                    {{item.name}}
+                                </div>
+                                <div class="item duration">
+                                    <img src="assets/img/home/sessions/clock.svg" alt="clock">
+                                    <span> Duration: {{item.duration}} hour</span>
+                                </div>
+                                <div class="item date">
+                                    <img src="assets/img/home/sessions/calendar.svg" alt="calendar">
+                                    <span> Date: {{item.date | date:'LLLL W'}}</span>
+                                </div>
+                                <div class="item video">
+                                    <img src="assets/img/home/sessions/play.svg" alt="play">
+                                    <span> View video</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="session-info-wrapper">
+                            <div class="session-info">
+                                <div class="authors">
+                                    <div class="avatar" *ngFor="let author of item.authors">
+                                        <img src={{author.avatar}} alt="avatar">
+                                    </div>
+                                </div>
+                                <div class="description">
+                                    <p>{{item.description}}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            
         </div>
     </div>
-</div>
