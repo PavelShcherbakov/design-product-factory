@@ -1,0 +1,47 @@
+@import "../../../../scss/home/component-wrapper";
+
+.base-content-wrapper {
+  background-color: #fafafa;
+  color: #000;
+}
+.base-inner-content-wrapper {
+  background-color: #fff;
+  color: #000;
+  margin: 290px 0px 0px;
+}
+
+.about-us-inner {
+  max-width: 1218px;
+  margin: 0 auto;
+  padding: 110px 0px;
+}
+
+.about-visual {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  .about-video {
+    img {
+      width: 100%;
+    }
+  }
+  .about-us {
+    display: flex;
+    .about {
+      padding-right: 60px;
+    }
+    .about-links {
+      width: 1;
+    }
+    .about-links {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+    }
+  }
+}
+
+.about-text {
+    padding-top: 71px;
+}

@@ -1,0 +1,55 @@
+@import "../../../../../scss/home/component-wrapper";
+
+.fixex-position{
+  display: block;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.base-content-wrapper { 
+  background-color: #000;
+  color: #fff;
+  height: 152px;
+}
+.menu-content-wrapper {
+  margin: auto;
+  height: 52px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .menu {
+    display: flex;
+    align-items: center;
+    
+    .logo {
+      margin-right: 75px;
+      cursor: pointer;
+    }
+
+    .item {
+      margin-right: 75px;
+      font-family: dana;
+      cursor: pointer;
+      &:last-child {
+        margin-right: 34px;
+      }
+    }
+  }
+  .register-button {
+    background-color:rgba(112, 112, 112, 0.4);
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    padding: 15px 20px;
+    border-radius: 24px;
+    cursor: pointer;
+    width: 150px;
+    
+  }
+}

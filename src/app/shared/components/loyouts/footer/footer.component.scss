@@ -1,0 +1,28 @@
+@import "../../../../../scss/home/component-wrapper";
+
+.base-content-wrapper {
+  background-color: #fff;
+  color: #000;
+  height: 152px;
+}
+
+.footer-wrapper {
+  padding: 0px 15px;
+  max-width: 1260px;
+  height: 308px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .links{
+      .link{
+          margin: 0px 20px;
+          height: 26px;
+      }
+  }
+  
+  .logo{
+      height: 70px;
+  }
+}

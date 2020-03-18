@@ -1,0 +1,26 @@
+.header {
+  position: relative;
+  width: 100%;
+  .background-text {
+    font-size: 120px;
+    color: #f1f1f1;
+    font-weight: 900;
+    text-align: center;
+  }
+  .text {
+    position: absolute;
+    font-size: 32px;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 900;
+  }
+
+  div {
+    pointer-events: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+}

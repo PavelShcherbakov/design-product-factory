@@ -1,0 +1,17 @@
+.base-content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.base-max-width-wrapper{
+  padding: 0px 15px;
+  max-width: 1460px;
+  width: 100%;
+}
+
+.base-inner-content-wrapper {
+  padding: 0px 15px;
+  border-radius: 30px;
+}
+
