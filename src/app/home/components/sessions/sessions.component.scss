@@ -70,10 +70,6 @@
   display: flex;
   text-align: start;
 
-  &:last-child {
-    padding: 48px 28px 0px;
-  }
-
   .authors {
     flex: 1;
     display: flex;
@@ -86,5 +82,15 @@
   }
   .description {
     flex: 3;
+  }
+}
+
+.session {
+  &:last-child{
+    .session-info {
+      &:last-child {
+        padding: 48px 28px 0px;
+      }
+    }
   }
 }

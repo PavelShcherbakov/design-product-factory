@@ -5,30 +5,35 @@
                 <app-text-header [text]="'Masters'" [backgroundText]="'Masters'"></app-text-header>
                 <div class="masters">
                     <div class="master-card" *ngFor="let master of masters">
-                        <div class="avatar">
-                            <img src={{master.avatar}} alt={{master.name}}>
-                            <!-- <div class="hover-info">
-                                <div class="links">
-                                    <a href="" target="_blank">
-                                        <img src="assets/img/home/masters/twitter-light.svg" alt="twitter">
-                                    </a>
-                                    <a href="" target="_blank">
-                                        <img src="assets/img/home/masters/facebook-light.svg" alt="facebook">
-                                    </a>
-                                    <a href="" target="_blank">
-                                        <img src="assets/img/home/masters/instagram-light.svg" alt="instagram">
-                                    </a>
+                        <div class="master-card-inner-wrapper">
+                            <div class="avatar">
+                                <img src={{master.avatar}} alt={{master.name}}>
+                                <div class="hover-info">
+                                    <div class="links">
+                                        <a href="" target="_blank">
+                                            <img src="assets/img/home/masters/twitter-light.svg" alt="twitter">
+                                        </a>
+                                        <a href="" target="_blank">
+                                            <img src="assets/img/home/masters/facebook-light.svg" alt="facebook">
+                                        </a>
+                                        <a href="" target="_blank">
+                                            <img src="assets/img/home/masters/instagram-light.svg" alt="instagram">
+                                        </a>
+                                    </div>
+                                    <div class="about-wrapper">
+                                        <button class="about-button">
+                                            <img src="assets/img/home/masters/about-icon.svg" alt="twitter">
+                                            <div>About Master</div>
+                                        </button>
+                                    </div>
                                 </div>
-                                <div class="about-master">
-
-                                </div>
-                            </div> -->
-                        </div>
-                        <div class="name">
-                            {{master.name}}
-                        </div>
-                        <div class="position">
-                            {{master.position}}
+                            </div>
+                            <div class="name">
+                                {{master.name}}
+                            </div>
+                            <div class="position">
+                                {{master.position}}
+                            </div>
                         </div>
                     </div>
                 </div>

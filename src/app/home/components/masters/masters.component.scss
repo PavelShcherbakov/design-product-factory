@@ -1,14 +1,95 @@
 @import "../../../../scss/home/component-wrapper";
 
-.masters-inner {
-  max-width: 1300px;
-  margin: 0 auto;
+.base-inner-content-wrapper {
+  margin: 0px 0px 200px;
 }
 
-.masters{
-    display: flex;
-    flex-wrap: wrap;
+.masters-inner {
+  max-width: 1310px;
+  margin: 0 auto;
+  padding: 55px 0px 0px;
 }
-.master-card{
-    padding-right: 75px;
+
+.masters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: -37.5px -35.5px;
+  padding: 70px 0px 75px;
+}
+.master-card {
+  width: 20%;
+  .master-card-inner-wrapper {
+    margin: 37.5px 37.5px;
+  }
+}
+.avatar {
+  position: relative;
+  width: 100%;
+  border-radius: 9px;
+  img {
+    width: 100%;
+  }
+  &:hover .hover-info {
+    display: flex;
+  }
+  .hover-info {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+
+    border-radius: 9px;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    .links {
+      display: flex;
+      justify-content: space-around;
+      padding-bottom: 48px;
+      a {
+        width: 28px;
+        height: 28px;
+      }
+    }
+    .about-wrapper {
+      display: flex;
+      justify-content: center;
+      .about-button {
+        background-color:rgba(180, 180, 180, 0.48);
+        border: none;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        font-size: 16px;
+        margin: 4px 2px;
+        padding: 15px 20px;
+        border-radius: 9px;
+        cursor: pointer;
+        width: 150px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        height: 46px;
+        width: 157px;
+        img {
+          width: 17px;
+          height: 17px;
+          padding-right: 5px;
+        }
+        
+      }
+    }
+  }
+}
+
+.name {
+  padding-top: 28px;
+  font-weight: bold;
+}
+
+.position {
+  padding-top: 15px;
 }
