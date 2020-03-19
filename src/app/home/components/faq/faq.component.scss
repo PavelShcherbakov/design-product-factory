@@ -1,1 +1,53 @@
 @import "../../../../scss/home/component-wrapper";
+
+
+.base-content-wrapper {
+  background-color: #fafafa;
+  color: #000;
+}
+
+.base-inner-content-wrapper {
+    background-color: #fafafa;
+  color: #000;
+  margin: 170px 0px 400px;
+  box-shadow: none;
+  padding: 0px;
+}
+
+.mat-expansion-panel {
+  -webkit-box-shadow: 0px 0px 29px -1px rgba(166, 166, 166, 0.2);
+  -moz-box-shadow: 0px 0px 29px -1px rgba(166, 166, 166, 0.2);
+  box-shadow: 0px 0px 29px -1px rgba(166, 166, 166, 0.2);
+  margin: 0px 0px 35px;
+  &:hover {
+    background-color: #fff;
+  }
+  &:last-child {
+    margin: 0px;
+  }
+  border-radius: 30px !important;
+  .mat-expansion-panel-header {
+    padding: 0px 50px;
+    &:hover {
+      background-color: #fff;
+    }
+    .panel-header {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .panel-description {
+      }
+      img {
+        width: 18px;
+        height: 18px;
+      }
+    }
+  }
+
+  .panel-text{
+    margin: 0px -24px;
+    padding: 0px 50px;
+  }
+  
+}

@@ -17,7 +17,8 @@ import { ProjectsComponent } from './home/components/projects/projects.component
 import { ScheduleComponent } from './home/components/schedule/schedule.component';
 import { HomeComponent } from './home/home.component';
 import { SharedModule } from './shared/shared.module';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatExpansionModule } from '@angular/material/expansion';
 @NgModule({
    declarations: [
       AppComponent,
@@ -36,7 +37,9 @@ import { SharedModule } from './shared/shared.module';
    imports: [
       BrowserModule,
       AppRoutingModule,
-      SharedModule
+      SharedModule,
+      BrowserAnimationsModule,
+      MatExpansionModule
    ],
    providers: [],
    bootstrap: [

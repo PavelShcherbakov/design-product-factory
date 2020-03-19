@@ -3,8 +3,23 @@
         <div class="base-inner-content-wrapper">
             <div class="faq-inner">
                 <app-text-header [text]="'Frequently Asked Questions'" [backgroundText]="'FAQ'"></app-text-header>
+                <mat-accordion class="example-headers-align">
+                    <mat-expansion-panel hideToggle="true" #panel *ngFor="let item of faqData">
+                        <mat-expansion-panel-header>
+                            <div class="panel-header">
+                                <div class="panel-description">
+                                    {{item.question}}
+                                </div>
+                                <img *ngIf="!panel.expanded" class="open" src="assets/img/home/faq/plus.svg" alt="open">
+                                <img *ngIf="panel.expanded" class="close" src="assets/img/home/faq/minus.svg" alt="close">
+                            </div>
+                        </mat-expansion-panel-header>
+                        <div class="panel-text">
+                            {{item.answer}}
+                        </div>
+                    </mat-expansion-panel>
+                </mat-accordion>
             </div>
-            
         </div>
     </div>
 </div>
