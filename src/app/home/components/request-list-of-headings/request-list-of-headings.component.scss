@@ -1,1 +1,73 @@
 @import "../../../../scss/home/component-wrapper";
+
+.base-content-wrapper {
+  background-color: #000;
+  color: #fff;
+  margin-top: 200px;
+}
+
+.base-inner-content-wrapper {
+  box-shadow: none;
+  padding: 0px;
+}
+
+.request-list-of-headings-inner {
+  display: flex;
+  justify-content: space-between;
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: start;
+    padding: 132px 0px;
+
+    .email-form {
+      width: 75%;
+      flex: 3;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      text-align: start;
+
+      .header {
+        font-size: xx-large;
+      }
+      .description{
+        line-height: 35px;
+      }
+      .mail-input{
+        background: #262626;
+        color: #fff;
+        border: none;
+        height: 50px;
+        font-size: large;
+        padding: 0px 35px;
+        border-radius: 16px;
+      }
+    }
+
+    .message {
+      flex: 1;
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      span {
+        padding-top: 5px;
+        color: #ACACAC;
+      }
+      &:before {
+        content: "";
+        background: url(/assets/img/home/course-fee/check.svg) no-repeat;
+        width: 27px;
+        height: 27px;
+        display: inline-flex;
+        padding-right: 10px;
+      }
+    }
+  }
+  .mail {
+    margin-top: -30px;
+    margin-bottom: -30px;
+    margin-right: -50px;
+  }
+}

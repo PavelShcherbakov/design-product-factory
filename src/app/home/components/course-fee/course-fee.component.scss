@@ -1,1 +1,113 @@
 @import "../../../../scss/home/component-wrapper";
+
+.base-content-wrapper {
+  background-color: #fff;
+  color: #000;
+}
+.base-inner-content-wrapper {
+  background-color: #fff;
+  color: #000;
+  margin-top: -375px;
+}
+
+.course-fee-inner {
+  text-align: center;
+  max-width: 1210px;
+  margin: 0 auto;
+  padding: 45px 0px;
+}
+.content {
+  padding-top: 50px;
+
+  .achievements {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+
+    .info {
+      flex: 2;
+      .question {
+        display: flex;
+        text-align: center;
+        padding-bottom: 45px;
+
+        font-size: medium;
+        font-weight: bold;
+        font-size: larger;
+      }
+
+      .answers {
+      }
+
+      .answer {
+        display: flex;
+        text-align: center;
+        padding-bottom: 45px;
+        &:last-child {
+          padding-bottom: 0px;
+        }
+        &:before {
+          content: "";
+          background: url(/assets/img/home/course-fee/check.svg) no-repeat;
+          width: 27px;
+          height: 27px;
+          display: inline-flex;
+          padding-right: 25px;
+        }
+      }
+    }
+
+    .fee {
+      flex: 1;
+
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      justify-content: space-around;
+
+      border-radius: 25px;
+      background-color: #000;
+      color: #fff;
+      padding: 45px 75px;
+      max-width: 300px;
+      .old-price {
+        font-size: 19px;
+        font-weight: bold;
+        text-decoration: line-through;
+      }
+      .new-price {
+        font-size: 24px;
+        font-weight: bold;
+      }
+      .pay-periodic {
+        font-size: medium;
+      }
+      .button-wrapper {
+        display: flex;
+        justify-content: center;
+        .register-button {
+          background-color: #f46632;
+          border: none;
+          color: white;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          border-radius: 10px;
+          height: 45px;
+          width: 260px;
+          font-weight: bold;
+          font-size: medium;
+        }
+      }
+    }
+  }
+  .line-separator {
+    height: 1px;
+    width: 100%;
+    background-color: rgba($color: #000, $alpha: 0.08);
+    margin: 60px 0px 45px;
+  }
+  .footer {
+    color: rgba($color: #000, $alpha: 0.49);
+  }
+}
