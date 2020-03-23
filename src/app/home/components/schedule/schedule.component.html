@@ -3,6 +3,26 @@
         <div class="base-inner-content-wrapper">
             <div class="schedule-inner">
                 <app-text-header [text]="'Schedule'" [backgroundText]="'Schedule'"></app-text-header>
+                <div class="time-line">
+                    <span class="label">Start of course</span>
+                    <img class="dash-line" src="assets/img/home/schedule/dash-line.svg" alt="dash-line">
+                    <span class="label">End of course</span>
+                </div>
+                <div class="time-boxes">
+                    <div class="time-box"><span>{{startDate | date:'yyyy &nbsp; / &nbsp; MM &nbsp; / &nbsp; dd'}}</span>
+                    </div>
+                    <div class="time-box"><span>{{endDate | date:'yyyy &nbsp; / &nbsp; MM &nbsp; / &nbsp; dd'}}</span>
+                    </div>
+                </div>
+                <div class="register">
+                    <div class="left-days">
+                        {{leftDays}}
+                    </div>
+                    <div class="label">
+                        Days left to sign up
+                    </div>
+                    <button class="register-button">Register</button>
+                </div>
             </div>
         </div>
     </div>

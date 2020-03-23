@@ -1,13 +1,88 @@
-
 @import "../../../../scss/home/component-wrapper";
 
-.base-content-wrapper{
-    background-color: #fafafa;
-    
+.base-content-wrapper {
+  background-color: #f9f9f9;
+}
+
+.base-inner-content-wrapper {
+  margin: 100px 0px;
+  background-color: #f9f9f9;
+  padding: 0px;
+  box-shadow: none;
+}
+
+.schedule-inner {
+}
+
+.time-line {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  padding-top: 50px;
+  padding-bottom: 80px;
+  .dash-line {
+    padding: 0px 80px;
+    width: 45%;
+    height: 100%;
   }
-  
-  .base-inner-content-wrapper{
-    margin-top: 100px;
-    margin-bottom: 100px;
-    background-color:#fff;
+  .label {
+    font-weight: bold;
+    font-size: 22px;
   }
+}
+
+.time-boxes {
+  display: flex;
+  justify-content: space-between;
+  .time-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 160px;
+    width: 680px;
+    background-color: #fff;
+    border-radius: 26px;
+    font-size: 55px;
+  }
+}
+
+.register {
+  padding-top: 100px;
+  max-width: 620px;
+  margin: 0px auto;
+  display: flex;
+  justify-content: space-around;
+  .label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 25px;
+  }
+  .left-days {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    color: white;
+    border-radius: 16px;
+    height: 45px;
+    width: 45px;
+
+    font-weight: bold;
+    font-size: 25px;
+  }
+  .register-button {
+    background-color: #f46632;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 10px;
+    height: 45px;
+    width: 200px;
+    font-weight: bold;
+    font-size: 18px;
+  }
+}

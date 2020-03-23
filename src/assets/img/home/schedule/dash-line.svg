@@ -1,0 +1,21 @@
+<svg width="568" height="22" xmlns="http://www.w3.org/2000/svg">
+
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="402" width="582" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <g opacity="0.2" id="Group_341">
+   <g stroke-width="3" stroke-linecap="round" stroke="#000" fill="none" id="Ellipse_195">
+    <circle id="svg_1" r="5.5" cy="11" cx="16.818172"/>
+    <circle id="svg_2" fill="none" r="5" cy="11" cx="16.818172"/>
+   </g>
+   <path stroke-dasharray="13" stroke-width="2" stroke-linecap="round" stroke="#000" fill="none" d="m549.002301,11.500125l-528,0" id="Path_468"/>
+   <g stroke-width="3" stroke-linecap="round" stroke="#000" id="Ellipse_197">
+    <circle id="svg_3" r="5.5" cy="11.363636" cx="551.181828"/>
+    <circle id="svg_4" fill="none" r="5" cy="11" cx="550.454557"/>
+   </g>
+  </g>
+ </g>
+</svg>

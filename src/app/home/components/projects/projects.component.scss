@@ -1,11 +1,12 @@
 @import "../../../../scss/home/component-wrapper";
 
-.base-content-wrapper{
-    background-color: #fff;
-  }
-  
-  .base-inner-content-wrapper{
-    margin-top: 100px;
-    margin-bottom: 100px;
-    background-color:#fff;
-  }
+.base-content-wrapper {
+  background-color: #fff;
+}
+
+.base-inner-content-wrapper {
+  margin: 100px 0px;
+  background-color: #fff;
+  padding: 0px;
+  box-shadow: none;
+}
