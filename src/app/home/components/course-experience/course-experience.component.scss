@@ -1,12 +1,13 @@
-@import "../../../../scss/home/component-wrapper";
+@import "./src/scss/home/component-wrapper";
+@import "./src/scss/utils/variables.scss";
 
 .base-content-wrapper {
-  background-color: #fafafa;
-  color: #000;
+  background-color: $light-gray;
+  color: $black;
 }
 .base-inner-content-wrapper {
-  background-color: #fff;
-  color: #000;
+  background-color: $white;
+  color: $black;
   margin: 125px 0px -420px;
 }
 
@@ -25,8 +26,8 @@
     width: 260px;
     border-width: 1px;
     border-radius: 10px;
-    border-color: #707070;
-    background-color: #ffffff;
+    border-color: $dark-gray;
+    background-color: $white;
     &:not(:disabled) {
       cursor: pointer;
     }
@@ -42,10 +43,10 @@
     }
 
     &.active {
-      background-color: #000;
-      color: #fff;
+      background-color: $black;
+      color: $white;
       &:hover {
-        background-color: #000;
+        background-color: $black;
       }
     }
 
@@ -54,7 +55,7 @@
     }
 
     &:hover {
-      background-color: #707070;
+      background-color: $dark-gray;
     }
   }
 }

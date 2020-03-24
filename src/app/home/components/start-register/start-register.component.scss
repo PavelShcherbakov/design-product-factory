@@ -1,14 +1,14 @@
-
-@import "../../../../scss/home/component-wrapper";
+@import "./src/scss/home/component-wrapper";
+@import "./src/scss/utils/variables.scss";
 
 .base-content-wrapper {
-  background-color: #000;
-  color: #fff;
+  background-color: $black;
+  color: $white;
 }
 
 .base-inner-content-wrapper {
-  background-color: #fff;
-  color: #000;
+  background-color: $white;
+  color: $black;
   margin: 0px 0px -170px;
 }
 
@@ -50,9 +50,9 @@
     }
   }
   button {
-    background-color: #f46632;
+    background-color: $button-orange;
     border: none;
-    color: white;
+    color: $white;
     text-align: center;
     text-decoration: none;
     display: inline-block;

@@ -1,12 +1,13 @@
-@import "../../../../scss/home/component-wrapper";
+@import "./src/scss/home/component-wrapper";
+@import "./src/scss/utils/variables.scss";
 
 .base-content-wrapper {
-  background-color: #fff;
-  color: #000;
+  background-color: $white;
+  color: $black;
 }
 .base-inner-content-wrapper {
-  background-color: #fff;
-  color: #000;
+  background-color: $white;
+  color: $black;
   margin-top: -375px;
 }
 
@@ -66,8 +67,8 @@
       justify-content: space-around;
 
       border-radius: 25px;
-      background-color: #000;
-      color: #fff;
+      background-color: $black;
+      color: $white;
       padding: 45px 75px;
       max-width: 300px;
       .old-price {
@@ -86,9 +87,9 @@
         display: flex;
         justify-content: center;
         .register-button {
-          background-color: #f46632;
+          background-color: $button-orange;
           border: none;
-          color: white;
+          color: $white;
           text-align: center;
           text-decoration: none;
           display: inline-block;
@@ -104,10 +105,10 @@
   .line-separator {
     height: 1px;
     width: 100%;
-    background-color: rgba($color: #000, $alpha: 0.08);
+    background-color: rgba($color: $black, $alpha: 0.08);
     margin: 60px 0px 45px;
   }
   .footer {
-    color: rgba($color: #000, $alpha: 0.49);
+    color: rgba($color: $black, $alpha: 0.49);
   }
 }

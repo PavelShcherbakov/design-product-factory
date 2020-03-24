@@ -1,9 +1,11 @@
+@import "./src/scss/utils/variables.scss";
+
 .header {
   position: relative;
   width: 100%;
   .background-text {
     font-size: 120px;
-    color: #f1f1f1;
+    color: $middle-gray;
     font-weight: 900;
     text-align: center;
   }

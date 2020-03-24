@@ -1,0 +1,15 @@
+<svg id="Group_924" data-name="Group 924" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="667.889" height="918" viewBox="0 0 667.889 918">
+  <defs>
+    <filter id="Rectangle_243" x="43.889" y="9" width="624" height="909" filterUnits="userSpaceOnUse">
+      <feOffset dx="50" dy="50" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="49.5" result="blur"/>
+      <feFlood flood-color="#2c2c2c" flood-opacity="0.059"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <rect id="Rectangle_149" data-name="Rectangle 149" width="458.124" height="611.389" rx="30" transform="translate(611.389) rotate(90)" fill="#f5f5f5"/>
+  <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Rectangle_243)">
+    <rect id="Rectangle_243-2" data-name="Rectangle 243" width="327" height="612" rx="30" transform="translate(142.39 107.5)" fill="#fff"/>
+  </g>
+</svg>

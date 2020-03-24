@@ -1,26 +1,25 @@
-@import "../../../../scss/home/component-wrapper";
-
+@import "./src/scss/home/component-wrapper";
+@import "./src/scss/utils/variables.scss";
+@import "./src/scss/utils/mixin.scss";
 
 .base-content-wrapper {
-  background-color: #fafafa;
-  color: #000;
+  background-color: $light-gray;
+  color: $black;
 }
 
 .base-inner-content-wrapper {
-    background-color: #fafafa;
-  color: #000;
+  background-color: $light-gray;
+  color: $black;
   margin: 170px 0px 560px;
   box-shadow: none;
   padding: 0px;
 }
 
 .mat-expansion-panel {
-  -webkit-box-shadow: 0px 0px 29px -1px rgba(166, 166, 166, 0.2);
-  -moz-box-shadow: 0px 0px 29px -1px rgba(166, 166, 166, 0.2);
-  box-shadow: 0px 0px 29px -1px rgba(166, 166, 166, 0.2);
+  @include shadow(0px, 0px, 29px, -1px);
   margin: 0px 0px 35px;
   &:hover {
-    background-color: #fff;
+    background-color: $white;
   }
   &:last-child {
     margin: 0px;
@@ -29,7 +28,7 @@
   .mat-expansion-panel-header {
     padding: 0px 50px;
     &:hover {
-      background-color: #fff;
+      background-color: $white;
     }
     .panel-header {
       width: 100%;
@@ -45,9 +44,8 @@
     }
   }
 
-  .panel-text{
+  .panel-text {
     margin: 0px -24px;
     padding: 0px 50px;
   }
-  
 }

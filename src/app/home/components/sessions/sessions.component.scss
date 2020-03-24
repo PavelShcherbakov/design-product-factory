@@ -1,13 +1,14 @@
-@import "../../../../scss/home/component-wrapper";
+@import "./src/scss/home/component-wrapper";
+@import "./src/scss/utils/variables.scss";
 
 .base-content-wrapper {
-  background-color: #fff;
-  color: #000;
+  background-color: $white;
+  color: $black;
 }
 
 .base-inner-content-wrapper {
-  background-color: #fff;
-  color: #000;
+  background-color: $white;
+  color: $black;
   margin: 545px 0px 0px;
   box-shadow: none;
 }
@@ -30,14 +31,14 @@
 .session-info-wrapper {
   margin-left: 1px;
   border-left: 1px solid;
-  border-color: #e8e8e8;
+  border-color: $middle-gray;
   padding-left: 13px;
 }
 
 .session-header {
   border-radius: 12px;
   padding: 0px 28px;
-  background-color: #f8f8f8;
+  background-color: rgba($middle-gray, 0.4);
   height: 53px;
 
   display: flex;

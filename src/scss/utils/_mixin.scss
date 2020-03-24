@@ -1,0 +1,14 @@
+@import "./src/scss/utils/variables.scss";
+
+@mixin shadow(
+  $horizontal-length,
+  $vertical-length,
+  $blur-radius,
+  $spread-radius,
+  $color: $shadow-color,
+  $opacity: $shadow-opacity
+) {
+    -webkit-box-shadow: $horizontal-length $vertical-length $blur-radius $spread-radius rgba($color, $opacity);
+    -moz-box-shadow: $horizontal-length $vertical-length $blur-radius $spread-radius rgba($color, $opacity);
+    box-shadow: $horizontal-length $vertical-length $blur-radius $spread-radius rgba($color, $opacity);
+}

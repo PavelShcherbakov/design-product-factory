@@ -1,8 +1,9 @@
-@import "../../../../../scss/home/component-wrapper";
+@import "./src/scss/home/component-wrapper";
+@import "./src/scss/utils/variables.scss";
 
 .base-content-wrapper {
-  background-color: #fff;
-  color: #000;
+  background-color: $white;
+  color: $black;
   height: 152px;
 }
 

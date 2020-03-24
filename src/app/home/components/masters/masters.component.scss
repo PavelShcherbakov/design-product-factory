@@ -1,13 +1,14 @@
-@import "../../../../scss/home/component-wrapper";
+@import "./src/scss/home/component-wrapper";
+@import "./src/scss/utils/variables.scss";
 
 
 .base-content-wrapper{
-  background-color: #fafafa;
+  background-color: $light-gray;
   margin-top: 660px;
 }
 
 .base-inner-content-wrapper{
-  background-color:#fff;
+  background-color:$white;
   margin-top: -560px;
 }
 
@@ -46,7 +47,7 @@
     justify-content: center;
 
     border-radius: 9px;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba($black, 0.7);
     position: absolute;
     top: 0;
     left: 0;
@@ -65,9 +66,9 @@
       display: flex;
       justify-content: center;
       .about-button {
-        background-color:rgba(180, 180, 180, 0.48);
+        background-color:rgba($button-gray, 0.48);
         border: none;
-        color: white;
+        color: $white;
         text-align: center;
         text-decoration: none;
         font-size: 16px;

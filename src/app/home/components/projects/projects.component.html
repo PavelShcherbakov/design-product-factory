@@ -3,6 +3,55 @@
         <div class="base-inner-content-wrapper">
             <div class="projects-inner">
                 <app-text-header [text]="'Projects'" [backgroundText]="'Projects'"></app-text-header>
+                <ngx-slick-carousel #slickSlider>
+                    <div ngxSlickItem class="slide" *ngFor="let slide of slides">
+                        <div class="info">
+                            <div class="description">
+                                <div class="header">
+                                    Design To Do List app
+                                </div>
+
+                                <div class="sub-header">
+                                    The previous student design project was the To Do List application product factory,
+                                    The counter examples are the result of the efforts of the students and their
+                                    teamwork in the first course.
+                                </div>
+                            </div>
+                            <div class="list">
+                                <div class="item">
+                                    <span>
+                                        Experience teamwork in a real product team and a collaborative effort
+                                        for a common goal.
+                                    </span>
+                                </div>
+                                <div class="item">
+                                    <span>
+                                        Survey real users and needs assessment and find the most suitable
+                                        solution to their problems.
+                                    </span>
+                                </div>
+                                <div class="item">
+                                    <span>
+                                        Design experience from notebooks to user interface design software.
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="page-counter">
+                                {{slide}}&nbsp;/&nbsp;{{slides.length}}
+                            </div>
+                        </div>
+                        <div class="space"></div>
+                        <div>
+                            <div class="image">
+                                <img class="main" src="assets/img/home/projects/image0.png" alt="image">
+                                <img class="left-arrow" src="assets/img/home/projects/left-arrow.svg" alt="left"
+                                     (click)="previosSlide()">
+                                <img class="right-arrow" src="assets/img/home/projects/right-arrow.svg" alt="right"
+                                     (click)="nextSlide()">
+                            </div>
+                        </div>
+                    </div>
+                </ngx-slick-carousel>
             </div>
         </div>
     </div>

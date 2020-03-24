@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild, ChangeDetectorRef } from '@angular/core';
+import { SlickCarouselComponent } from 'ngx-slick-carousel';
 
 @Component({
   selector: 'app-projects',
@@ -7,9 +8,25 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProjectsComponent implements OnInit {
 
-  constructor() { }
+  public slides: number[] = [1, 2, 3, 4, 5];
+  @ViewChild('slickSlider') slider: SlickCarouselComponent;
 
-  ngOnInit() {
+  constructor(private cdr: ChangeDetectorRef) { }
+
+  ngOnInit() { }
+
+  public nextSlide() {
+    if (!this.slider) {
+      return;
+    }
+    this.slider.slickNext();
+  }
+
+  public previosSlide() {
+    if (!this.slider) {
+      return;
+    }
+    this.slider.slickPrev();
   }
 
 }

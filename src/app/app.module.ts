@@ -19,6 +19,7 @@ import { HomeComponent } from './home/home.component';
 import { SharedModule } from './shared/shared.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatExpansionModule } from '@angular/material/expansion';
+import { SlickCarouselModule } from 'ngx-slick-carousel';
 @NgModule({
    declarations: [
       AppComponent,
@@ -39,7 +40,8 @@ import { MatExpansionModule } from '@angular/material/expansion';
       AppRoutingModule,
       SharedModule,
       BrowserAnimationsModule,
-      MatExpansionModule
+      MatExpansionModule,
+      SlickCarouselModule
    ],
    providers: [],
    bootstrap: [
